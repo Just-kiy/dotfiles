@@ -83,7 +83,6 @@ plugins=(
     zsh-autosuggestions
     poetry
     python
-    pyenv
     pre-commit
     pip
     docker

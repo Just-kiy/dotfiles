@@ -109,6 +109,9 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
+alias vi=nvim
+alias vim=nvim
+
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
@@ -132,3 +135,6 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Created by `pipx` on 2024-12-11 08:41:51
+export PATH="$PATH:/Users/nikitakovalev/.local/bin"

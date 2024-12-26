@@ -1,0 +1,13 @@
+[alias]
+    st = status
+    ci = commit
+    cia = commit --amend
+    unci = reset HEAD~1 --mixed
+
+    go = checkout
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+
+[includeIf "gitdir:~/work/"]
+  path = ~/work/.gitconfig 

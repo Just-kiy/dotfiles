@@ -22,12 +22,25 @@ return {
 			lspconfig.lua_ls.setup({
 				capabilities = capabilities,
 			})
-			lspconfig.ruff.setup({
-				capabilities = capabilities,
-			})
+			-- lspconfig.ruff.setup({
+			-- 	capabilities = capabilities,
+			-- })
 
 			lspconfig.pylsp.setup({
 				capabilities = capabilities,
+				settings = {
+					pylsp = {
+						plugins = {
+							ruff = {
+								enabled = true,
+								formatEnabled = true,
+							},
+							rope = {
+								enabled = true,
+							},
+						},
+					},
+				},
 			})
 			lspconfig.gopls.setup({
 				capabilities = capabilities,

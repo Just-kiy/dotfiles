@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-selected=$(fd . ~/work --min-depth=1 --max-depth=1 -t=d | fzf)
+selected=$(fd . ~/work ~/.dotfiles ~/projects --min-depth=1 --max-depth=1 -t=d | fzf)
 
 if [[ -z $selected ]]; then
     exit 0

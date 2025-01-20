@@ -138,3 +138,4 @@ fi
 
 # Created by `pipx` on 2024-12-11 08:41:51
 export PATH="$PATH:/Users/nikitakovalev/.local/bin"
+export PATH="$PATH:/Users/nikitakovalev/projects/flutter/bin"

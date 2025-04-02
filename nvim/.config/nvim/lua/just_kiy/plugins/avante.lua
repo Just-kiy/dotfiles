@@ -6,6 +6,7 @@ return {
         -- add any opts here
         -- for example
         provider = "openrouter",
+        auto_suggestions_provider = "openrouter",
         vendors = {
             openrouter = {
                 __inherited_from = 'openai',

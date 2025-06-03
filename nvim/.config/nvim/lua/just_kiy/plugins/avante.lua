@@ -6,7 +6,10 @@ return {
         -- add any opts here
         -- for example
         provider = "openrouter",
-        auto_suggestions_provider = "openrouter",
+        cursor_applying_provider = "openrouter",
+        behaviour = {
+            enable_cursor_planning_mode = true,
+        },
         vendors = {
             openrouter = {
                 __inherited_from = 'openai',

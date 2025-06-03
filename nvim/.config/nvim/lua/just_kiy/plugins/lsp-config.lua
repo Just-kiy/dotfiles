@@ -7,6 +7,8 @@ local servers = {
     "dockerls",
     "helm_ls",
     "yamlls",
+    -- "basedpyright",
+    -- "ruff",
 }
 
 return {
@@ -82,11 +84,11 @@ return {
             local telescope = require("telescope.builtin")
             vim.keymap.set("n", "gd", telescope.lsp_definitions, {})
             vim.keymap.set("n", "gr", telescope.lsp_references, {})
+            -- vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>", {})
             -- vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", {})
             vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<cr>", {})
             vim.keymap.set("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<cr>", {})
             vim.keymap.set("n", "go", "<cmd>lua vim.lsp.buf.type_definition()<cr>", {})
-            -- vim.keymap.set("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>", {})
             vim.keymap.set("n", "gs", "<cmd>lua vim.lsp.buf.signature_help()<cr>", {})
             vim.keymap.set("n", "<F2>", "<cmd>lua vim.lsp.buf.rename()<cr>", {})
             vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, {})

@@ -10,7 +10,9 @@ return {
         -- render-markdown renders the CC pane nicely.
         dependencies = {
             "nvim-lua/plenary.nvim",
+            "ravitemer/codecompanion-history.nvim", -- Save and load conversation history
             "MunifTanjim/nui.nvim",
+
             {
                 "MeanderingProgrammer/render-markdown.nvim",
                 -- render-markdown should activate for CC buffers (filetype "CC")
